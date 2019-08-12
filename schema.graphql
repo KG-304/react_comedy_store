@@ -1,0 +1,16 @@
+    type Query {
+        OpenMic(id: Int!): OpenMic
+        OpenMics: [OpenMic]
+    },
+    type Mutation {
+        updateOpenMicLocation(id: Int!, location: String!): OpenMic
+    }
+    type OpenMic {
+        id: ID
+        title: String
+        location: String
+        author: String
+        description: String
+        url: String
+        phone: String
+    }
