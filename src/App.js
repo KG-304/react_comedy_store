@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import environment from "./Environment.js";
 import { QueryRenderer, graphql } from "react-relay";
@@ -27,9 +26,9 @@ class App extends React.Component {
             return (
             <div>
               {props.OpenMics.map((mic, key) => 
-              <div>
+              <div key={key}>
                     <span style={{display: 'block'}}>{mic.author}</span>
-                    <span style={{display: 'block'}} key={key}>{mic.location}</span>
+                    <span style={{display: 'block'}}>{mic.location}</span>
                     <span style={{display: 'block'}}>{mic.description}</span>
                     <span style={{display: 'block'}}>{mic.phone}</span>
                     <br/>
