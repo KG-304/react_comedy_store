@@ -31,20 +31,15 @@ class App extends React.Component {
                 <Navi />
                 <AnimatedHeader name={'Karl'}/>
                 <Zoom duration={300}>
-                  <table style={{ position: 'relative', left: '10%', top: '200px', height: '200px', width: "50%", fontFamily: 'Helvetica' }}>
-                    <tr>
-                      <th style={{fontWeight: '400'}}>Author</th>
-                      <th style={{fontWeight: '400'}}>Location</th>
-                      <th style={{fontWeight: '400'}}>Contact</th>
-                    </tr>
+                  <div style={{position: 'relative', top: '100px', left: '5%'}}>
                     {props.OpenMics.map((mic, key) => (
-                      <tr style={{fontWeight: 'lighter'}}>
-                        <td key={key}>{mic.author}</td>
-                        <td>{mic.location};</td>
-                        <td>{mic.phone}</td>
-                      </tr>
+                      <div style={{fontWeight: 'lighter', width: '200px', height: '200px', float: 'left', backgroundColor: 'white',borderStyle: 'dotted' , marginRight: '30px'}}>
+                        <span key={key}>{mic.author}</span>
+                        <span>{mic.location}</span>
+                        <span>{mic.phone}</span>
+                      </div>
                     ))}
-                  </table>
+                  </div>
                 </Zoom>
               </Fragment>
             );
