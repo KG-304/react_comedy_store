@@ -4,6 +4,7 @@ import environment from "./Environment.js";
 import { QueryRenderer, graphql } from "react-relay";
 import Zoom from "react-reveal/Zoom";
 import AnimatedHeader from './hooksAnimation/aniHeader'
+import Navi from "./atoms/nav";
 
 class App extends React.Component {
   render() {  
@@ -27,9 +28,10 @@ class App extends React.Component {
           } else if (props) {
             return (
               <Fragment>
-                <AnimatedHeader name={'Chuck'}/>
+                <Navi />
+                <AnimatedHeader name={'Karl'}/>
                 <Zoom duration={300}>
-                  <table style={{ position: 'relative', left: '27%', height: '200px', width: "50%", fontFamily: 'Helvetica' }}>
+                  <table style={{ position: 'relative', left: '10%', top: '200px', height: '200px', width: "50%", fontFamily: 'Helvetica' }}>
                     <tr>
                       <th style={{fontWeight: '400'}}>Author</th>
                       <th style={{fontWeight: '400'}}>Location</th>

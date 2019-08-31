@@ -23,6 +23,21 @@
   color: #61dafb;
 }
 
+.background{
+  background-color: #17a2b8;
+  height: 510px;
+  opacity: 0.9;
+}
+
+.background .my-header{
+  opacity: 1;
+  position: relative;
+  left: 34%;
+  top: 70px;
+  font-family: Helvetica;
+  font-weight: lighter;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
