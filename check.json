@@ -1,8 +1,8 @@
 {
-    "name": "admin-ui",
+    "name": "the-store",
     "version": "0.1.0",
     "private": true,
-    "homepage": "http://localhost:3000/admin-ui",
+    "homepage": "http://localhost:3001/the-store",
     "dependencies": {
       "autoprefixer": "7.1.2",
       "babel-core": "^6.26.3",

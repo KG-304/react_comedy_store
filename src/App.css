@@ -38,6 +38,22 @@
   font-weight: lighter;
 }
 
+#open-icon{
+  font-weight: lighter;
+  width: 200px;
+  height: 200px;
+  float: left;
+  background-size: cover;
+  background-color: #343a40;
+  border-style: solid;
+  opacity: 0.8;
+  margin-right: 30px;
+}
+
+#open-icon:hover{
+  height: 400px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
