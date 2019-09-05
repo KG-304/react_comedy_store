@@ -8,8 +8,8 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - '.:/app'
-      - '/app/node_modules'
+      - '.:/react_comedy_store'
+      - '/react_comedy_store/node_modules'
     ports:
       - '3001:3000'
     environment:
