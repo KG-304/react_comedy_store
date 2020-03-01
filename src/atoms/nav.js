@@ -10,10 +10,10 @@ class Navi extends React.Component{
     render(){
         return(
             <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Comedy Store</Navbar.Brand>
+            <Link to="/"><Navbar.Brand href="/">Comedy Store</Navbar.Brand></Link>
             <Nav className="mr-auto">
-              <Link to="/" style={{textDecoration: 'none'}}><Nav.Link href="#home">Home</Nav.Link></Link>
-              <Link to="/" ><Nav.Link href="#features">Open Mics</Nav.Link></Link>
+              <Link to="/" style={{textDecoration: 'none'}}><Nav.Link href="/">Home</Nav.Link></Link>
+              <Link to="/view-all" ><Nav.Link href="/view-all">Open Mics</Nav.Link></Link>
               <Nav.Link href="#pricing">More Info</Nav.Link>
             </Nav>
             <Form inline>
