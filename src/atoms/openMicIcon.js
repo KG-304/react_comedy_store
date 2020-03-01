@@ -6,7 +6,7 @@ class OpenMicIcon extends React.Component{
     render(){
         return(
         <Link to={"/open-mic/" + this.props.mic.id} style={{textDecoration: 'none', outline: 'none'}}>
-            <div id="open-icon" style={{backgroundImage: `url(${mic})`}}>
+            <div id="open-icon" style={{backgroundImage: `url(${mic})`, marginBottom: '10pt'}}>
                 <span key={this.props.mic.id} style={{display: 'table-row', color: 'white'}}>{this.props.mic.author}</span>
                 <span style={{display: 'table-row', color: 'white'}}>{this.props.mic.location}</span>
                 <span style={{display: 'table-row', color: 'white'}}>{this.props.mic.phone}</span>
