@@ -25,15 +25,17 @@
 
 .background{
   background-color: #17a2b8;
-  height: 510px;
+  height: 35vh;
   opacity: 0.9;
+  overflow-y: auto;
 }
 
 .background .my-header{
   opacity: 0.8;
-  position: relative;
-  left: 34%;
-  top: 70px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: Helvetica;
   font-weight: lighter;
 }
@@ -48,6 +50,7 @@
   border-style: solid;
   opacity: 0.8;
   margin-right: 30px;
+  transition: 0.4s ease-out;
 }
 
 #open-icon:hover{

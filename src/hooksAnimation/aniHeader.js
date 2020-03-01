@@ -7,7 +7,7 @@ const AnimatedHeader = (props) => {
     return (
             <animated.div style={props1} className="background">
                 <animated.h2 style={props1} className="my-header">Welcome to The Comedy Store, {props.name}!</animated.h2>
-                <div style={{width: '500px', position: 'relative', left: '36%', top: '167px'}}>
+                <div style={{ position: 'absolute', top: '30%', left: '50%', transform: 'translate(-50%, -50%)',fontFamily: 'Helvetica', fontWeight: 'lighter'}}>
                     <Typing>
                         <span style={{fontSize: '20px'}}>Welcome to the best comedy managing tool around! You can find open mics, local comedians, and tell all experiences. Keep laughing!</span>
                     </Typing>
