@@ -13,7 +13,7 @@ class Home extends React.Component {
         environment={environment} // env for headers, endpoint, and other config for graphql
         query={graphql`
           query HomeQuery {
-            OpenMics {
+            OpenMics(first: 10) {
               id
               location
               description
@@ -32,7 +32,7 @@ class Home extends React.Component {
                     <AnimatedHeader name={'Karl'}/>
                       <Zoom duration={300}>
                         <h2 style={{fontFamily: 'Helvetica', fontWeight: 'lighter', position: 'relative', top: '30px', left: '79px'}}>Take a glance at open mics tonight!</h2>
-                        <div style={{position: 'relative', top: '100px', left: '5%'}}>
+                        <div style={{position: 'absolute', top: '55%', left: '5%'}}>
                           {props.OpenMics.map((mic, key) => (
                             <OpenMicIcon mic={mic} key={key} />
                           ))}
