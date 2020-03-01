@@ -1,7 +1,7 @@
     type Query {
         OpenMic(id: ID!): OpenMic
-        OpenMics: [OpenMic]
-        getUser: User
+        OpenMics(first: Int): [OpenMic]
+        getUser(id: ID!): User
     },
     type Mutation {
         updateOpenMicLocation(id: ID!, location: String!): OpenMic
@@ -16,6 +16,7 @@
         phone: String
     }
     type User{
+        id: ID!
         email: String
         firstName: String
         lastName: String

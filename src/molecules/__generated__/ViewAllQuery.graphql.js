@@ -1,6 +1,6 @@
 /**
  * @flow
- * @relayHash 168e0ea8a9a7610bbddc9ed48c67159a
+ * @relayHash 80a30a61bfc46fa2a8a42abcd0ede4ec
  */
 
 /* eslint-disable */
@@ -9,8 +9,8 @@
 
 /*::
 import type { ConcreteRequest } from 'relay-runtime';
-export type HomeQueryVariables = {||};
-export type HomeQueryResponse = {|
+export type ViewAllQueryVariables = {||};
+export type ViewAllQueryResponse = {|
   +OpenMics: ?$ReadOnlyArray<?{|
     +id: string,
     +location: ?string,
@@ -19,16 +19,16 @@ export type HomeQueryResponse = {|
     +author: ?string,
   |}>
 |};
-export type HomeQuery = {|
-  variables: HomeQueryVariables,
-  response: HomeQueryResponse,
+export type ViewAllQuery = {|
+  variables: ViewAllQueryVariables,
+  response: ViewAllQueryResponse,
 |};
 */
 
 
 /*
-query HomeQuery {
-  OpenMics(first: 10) {
+query ViewAllQuery {
+  OpenMics {
     id
     location
     description
@@ -44,14 +44,8 @@ var v0 = [
     "kind": "LinkedField",
     "alias": null,
     "name": "OpenMics",
-    "storageKey": "OpenMics(first:10)",
-    "args": [
-      {
-        "kind": "Literal",
-        "name": "first",
-        "value": 10
-      }
-    ],
+    "storageKey": null,
+    "args": null,
     "concreteType": "OpenMic",
     "plural": true,
     "selections": [
@@ -97,7 +91,7 @@ return {
   "kind": "Request",
   "fragment": {
     "kind": "Fragment",
-    "name": "HomeQuery",
+    "name": "ViewAllQuery",
     "type": "Query",
     "metadata": null,
     "argumentDefinitions": [],
@@ -105,19 +99,19 @@ return {
   },
   "operation": {
     "kind": "Operation",
-    "name": "HomeQuery",
+    "name": "ViewAllQuery",
     "argumentDefinitions": [],
     "selections": (v0/*: any*/)
   },
   "params": {
     "operationKind": "query",
-    "name": "HomeQuery",
+    "name": "ViewAllQuery",
     "id": null,
-    "text": "query HomeQuery {\n  OpenMics(first: 10) {\n    id\n    location\n    description\n    phone\n    author\n  }\n}\n",
+    "text": "query ViewAllQuery {\n  OpenMics {\n    id\n    location\n    description\n    phone\n    author\n  }\n}\n",
     "metadata": {}
   }
 };
 })();
 // prettier-ignore
-(node/*: any*/).hash = '951b83d9fa02dd1b9607493e0a933875';
+(node/*: any*/).hash = 'd283383505bc634b5312202cadec2d4f';
 module.exports = node;
