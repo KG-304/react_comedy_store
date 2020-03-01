@@ -3,10 +3,10 @@ import Navi from '../atoms/nav';
 import environment from "../config/Environment";
 import { QueryRenderer, graphql } from "react-relay"
 import Zoom from "react-reveal/Zoom";
+import Page from '../ecosystems/inPage';
 
 class MicPage extends React.Component{
     render(){
-        console.log(this.props)
         return(
         <QueryRenderer
             environment={environment} // env for headers, endpoint, and other config for graphql
@@ -32,7 +32,7 @@ class MicPage extends React.Component{
                     <Fragment>
                         <Navi/>
                         <Zoom duration={300}>
-                        <div>{props.OpenMic.location}</div>
+                        <Page openMic={props.OpenMic}/>
                         </Zoom>
                     </Fragment>
                     );
